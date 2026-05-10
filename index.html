@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Mother's Day — A Card With Love</title>
+<meta name="description" content="A heartfelt Happy Mother's Day card with floating hearts, a photo gallery, and reasons we love mom." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="petals" id="petals" aria-hidden="true"></div>
+
+<button id="musicToggle" class="music-btn" aria-label="Play music">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+  <span id="musicLabel">Play music</span>
+</button>
+<audio id="bgMusic" src="https://cdn.pixabay.com/audio/2022/10/30/audio_347111d4f9.mp3" loop preload="none"></audio>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+
+  <div class="badge fade-up">
+    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" class="heart-beat"><path d="M12 21s-7-4.5-9.5-9C.8 8.5 2.5 4 6.5 4c2 0 3.5 1 4.5 2.5C12 5 13.5 4 15.5 4 19.5 4 21.2 8.5 19.5 12c-2.5 4.5-7.5 9-7.5 9z"/></svg>
+    May 10 · With Love
+  </div>
+
+  <h1 class="hero-title fade-up" style="animation-delay:.1s">Happy Mother's Day</h1>
+  <p class="hero-sub fade-up" style="animation-delay:.2s">
+    To my mother whose we love the most mama Alma Carangcarang — this little card is a quiet thank you, a soft hug, and a thousand reasons of gratitude.
+  </p>
+
+  <div class="card-3d fade-up" style="animation-delay:.3s">
+    <div class="card-inner" id="card" role="button" tabindex="0" aria-label="Open card">
+      <div class="card-face card-front">
+        <div class="heart-circle"><svg viewBox="0 0 24 24" width="38" height="38" fill="white" class="heart-beat"><path d="M12 21s-7-4.5-9.5-9C.8 8.5 2.5 4 6.5 4c2 0 3.5 1 4.5 2.5C12 5 13.5 4 15.5 4 19.5 4 21.2 8.5 19.5 12c-2.5 4.5-7.5 9-7.5 9z"/></svg></div>
+        <p class="script-md">To the World's</p>
+        <h2 class="script-xl">Best Mom</h2>
+        <div class="divider"></div>
+        <p class="tap-hint">TAP TO OPEN</p>
+      </div>
+      <div class="card-face card-back">
+        <h3 class="script-lg gradient-text">Dear Mama Alma,</h3>
+        <p class="card-msg">
+          Thank you for your endless love, your gentle heart, and the warmth you bring to every moment. You are our safe place, our first teacher, and our forever inspiration.
+        </p>
+        <p class="script-md rose-text">We love you, always. 💕</p>
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="#e25c79" class="heart-beat" style="margin-top:1rem"><path d="M12 21s-7-4.5-9.5-9C.8 8.5 2.5 4 6.5 4c2 0 3.5 1 4.5 2.5C12 5 13.5 4 15.5 4 19.5 4 21.2 8.5 19.5 12c-2.5 4.5-7.5 9-7.5 9z"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <p class="tap-hint sub fade-up" style="animation-delay:.4s">✨ Tap the card to open ✨</p>
+</section>
+
+<!-- APPRECIATION -->
+<section class="section">
+  <div class="grid-2">
+    <div class="image-wrap float-soft">
+      <img src="Picture 1.jpg" alt="Pink peonies and roses" loading="lazy" />
+    </div>
+    <div>
+      <p class="script-md rose-text">A heartfelt thank you</p>
+      <h2 class="script-xl gradient-text">For Everything, Mama</h2>
+      <p class="body-text">
+        You held our small hands when we learned to walk, and you've been holding our hearts ever since. You believed in us before we believed in ourselves. You loved us through every season, every storm, every silly mistake — without ever keeping score.
+      </p>
+      <p class="body-text">
+        Today is for you. For your soft voice, your strong shoulders, and the love that makes our world feel safe.
+      </p>
+      <p class="script-md rose-text" style="margin-top:1rem">💗 With all our love</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section center">
+  <p class="script-md rose-text">Memories</p>
+  <h2 class="script-xl gradient-text">Moments With You</h2>
+  <p class="body-text" style="max-width:560px;margin:1rem auto 0">
+    A little gallery of the warmth, the laughter, and the love you've given us through the years.
+  </p>
+  <div class="gallery">
+    <div class="slides" id="slides">
+      <div class="slide active"><img src="Picture 2.jpg" alt="" loading="lazy"><span class="caption"></span></div>
+      <div class="slide"><img src="Picture 3.jpg" alt="" loading="lazy"><span class="caption"></span></div>
+      <div class="slide"><img src="Picture 4.jpg" alt="" loading="lazy"><span class="caption"></span></div>
+      <div class="slide"><img src="Picture 6.jpg" alt="" loading="lazy"><span class="caption"></span></div>
+    </div>
+    <button class="nav prev" id="prev" aria-label="Previous">‹</button>
+    <button class="nav next" id="next" aria-label="Next">›</button>
+    <div class="dots" id="dots"></div>
+  </div>
+</section>
+
+<!-- REASONS -->
+<section class="section">
+  <div class="center">
+    <p class="script-md rose-text">Reasons</p>
+    <h2 class="script-xl gradient-text">Why We Love Our Mama</h2>
+  </div>
+  <div class="reasons" id="reasons"></div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <svg viewBox="0 0 24 24" width="40" height="40" fill="#e25c79" class="heart-beat"><path d="M12 21s-7-4.5-9.5-9C.8 8.5 2.5 4 6.5 4c2 0 3.5 1 4.5 2.5C12 5 13.5 4 15.5 4 19.5 4 21.2 8.5 19.5 12c-2.5 4.5-7.5 9-7.5 9z"/></svg>
+  <blockquote class="script-xl gradient-text">"A mother's arms are made of tenderness, and children sleep soundly in them."</blockquote>
+  <p class="muted">— Victor Hugo</p>
+  <p class="muted small">Made with ♥ for the mother we love the most, Mama Alma Carangcarang.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
